@@ -34,12 +34,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		177705C6306438CF00277300 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		17322A6C3062FBF500154EE9 /* Leet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Leet; sourceTree = BUILT_PRODUCTS_DIR; };
 		17322A7A3062FC6300154EE9 /* 9.palindrome */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 9.palindrome; sourceTree = BUILT_PRODUCTS_DIR; };
 		17322A863062FE2300154EE9 /* 1.two sum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1.two sum"; sourceTree = BUILT_PRODUCTS_DIR; };
+		177705C8306438CF00277300 /* 0002.Two num */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "0002.Two num"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -56,6 +66,11 @@
 		17322A873062FE2300154EE9 /* 1.two sum */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "1.two sum";
+			sourceTree = "<group>";
+		};
+		177705C9306438CF00277300 /* 0002.Add Two num */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "0002.Add Two num";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -82,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		177705C5306438CF00277300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +113,7 @@
 				17322A6E3062FBF500154EE9 /* Leet */,
 				17322A7B3062FC6300154EE9 /* 9.palindrome */,
 				17322A873062FE2300154EE9 /* 1.two sum */,
+				177705C9306438CF00277300 /* 0002.Add Two num */,
 				17322A6D3062FBF500154EE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +124,7 @@
 				17322A6C3062FBF500154EE9 /* Leet */,
 				17322A7A3062FC6300154EE9 /* 9.palindrome */,
 				17322A863062FE2300154EE9 /* 1.two sum */,
+				177705C8306438CF00277300 /* 0002.Two num */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +198,28 @@
 			productReference = 17322A863062FE2300154EE9 /* 1.two sum */;
 			productType = "com.apple.product-type.tool";
 		};
+		177705C7306438CF00277300 /* 0002.Two num */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177705CE306438CF00277300 /* Build configuration list for PBXNativeTarget "0002.Two num" */;
+			buildPhases = (
+				177705C4306438CF00277300 /* Sources */,
+				177705C5306438CF00277300 /* Frameworks */,
+				177705C6306438CF00277300 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				177705C9306438CF00277300 /* 0002.Add Two num */,
+			);
+			name = "0002.Two num";
+			packageProductDependencies = (
+			);
+			productName = "0002.Two num";
+			productReference = 177705C8306438CF00277300 /* 0002.Two num */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +236,9 @@
 						CreatedOnToolsVersion = 26.6;
 					};
 					17322A853062FE2300154EE9 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					177705C7306438CF00277300 = {
 						CreatedOnToolsVersion = 26.6;
 					};
 				};
@@ -211,6 +260,7 @@
 				17322A6B3062FBF500154EE9 /* Leet */,
 				17322A793062FC6300154EE9 /* 9.palindrome */,
 				17322A853062FE2300154EE9 /* 1.two sum */,
+				177705C7306438CF00277300 /* 0002.Two num */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +281,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		17322A823062FE2300154EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177705C4306438CF00277300 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,6 +460,22 @@
 			};
 			name = Release;
 		};
+		177705CC306438CF00277300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		177705CD306438CF00277300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -438,6 +511,15 @@
 			buildConfigurations = (
 				17322A8B3062FE2300154EE9 /* Debug */,
 				17322A8C3062FE2300154EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177705CE306438CF00277300 /* Build configuration list for PBXNativeTarget "0002.Two num" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177705CC306438CF00277300 /* Debug */,
+				177705CD306438CF00277300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
